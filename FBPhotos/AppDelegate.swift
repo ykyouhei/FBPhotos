@@ -7,15 +7,34 @@
 //
 
 import UIKit
+import Accounts
+import FBPhotosKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    /**************************************************************************/
+    // MARK: - Types
+    /**************************************************************************/
+    
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        var socialManager = SocialManager.sharedManager
+        if socialManager.accessGrantedWithAccountTypeIdentifier(ACAccountTypeIdentifierFacebook) {
+            println("アクセス承認済み")
+            let navVC = window?.rootViewController as UINavigationController
+            let friendVC = navVC.topViewController as FriendListsViewController
+            let accounts = SocialManager.sharedManager.accountsWithAccountTypeIdentifier(ACAccountTypeIdentifierFacebook)
+            friendVC.account =  accounts![0] as? ACAccount
+        } else {
+            let storyboard = UIStoryboard(name: MainStoryboard.storyboardName, bundle: nil)
+            let navVC = window?.rootViewController as UINavigationController
+            let loginVC = storyboard.instantiateViewControllerWithIdentifier(MainStoryboard.ViewControllerIdentifiers.loginViewController) as LoginViewController
+            navVC.setViewControllers([loginVC], animated: false)
+        }
+        
         return true
     }
 
