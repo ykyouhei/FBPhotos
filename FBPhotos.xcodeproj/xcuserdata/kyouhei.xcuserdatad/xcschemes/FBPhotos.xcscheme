@@ -34,6 +34,20 @@
                ReferencedContainer = "container:FBPhotos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "416920E819DF96A600C75A10"
+               BuildableName = "FBPhotosKitTests.xctest"
+               BlueprintName = "FBPhotosKitTests"
+               ReferencedContainer = "container:FBPhotos.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "416920C119DF91FF00C75A10"
                BuildableName = "FBPhotosTests.xctest"
                BlueprintName = "FBPhotosTests"
+               ReferencedContainer = "container:FBPhotos.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "416920E819DF96A600C75A10"
+               BuildableName = "FBPhotosKitTests.xctest"
+               BlueprintName = "FBPhotosKitTests"
                ReferencedContainer = "container:FBPhotos.xcodeproj">
             </BuildableReference>
          </TestableReference>

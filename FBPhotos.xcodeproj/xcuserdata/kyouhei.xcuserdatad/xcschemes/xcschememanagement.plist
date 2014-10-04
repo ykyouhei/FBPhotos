@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FBPhotosKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>416920C119DF91FF00C75A10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>416920DE19DF96A500C75A10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>416920E819DF96A600C75A10</key>
 		<dict>
 			<key>primary</key>
 			<true/>

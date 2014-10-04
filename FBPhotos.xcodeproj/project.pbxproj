@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		416920B319DF91FF00C75A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416920B219DF91FF00C75A10 /* AppDelegate.swift */; };
-		416920B519DF91FF00C75A10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416920B419DF91FF00C75A10 /* ViewController.swift */; };
-		416920B819DF91FF00C75A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416920B619DF91FF00C75A10 /* Main.storyboard */; };
-		416920BA19DF91FF00C75A10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 416920B919DF91FF00C75A10 /* Images.xcassets */; };
-		416920BD19DF91FF00C75A10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 416920BB19DF91FF00C75A10 /* LaunchScreen.xib */; };
 		416920C919DF91FF00C75A10 /* FBPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416920C819DF91FF00C75A10 /* FBPhotosTests.swift */; };
+		416920D819DF953A00C75A10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 416920D419DF953A00C75A10 /* LaunchScreen.xib */; };
+		416920D919DF953A00C75A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416920D619DF953A00C75A10 /* Main.storyboard */; };
+		416920F019DF96A600C75A10 /* FBPhotosKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416920EF19DF96A600C75A10 /* FBPhotosKitTests.swift */; };
+		416920F319DF96A600C75A10 /* FBPhotosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416920DF19DF96A500C75A10 /* FBPhotosKit.framework */; };
+		416920F419DF96A600C75A10 /* FBPhotosKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 416920DF19DF96A500C75A10 /* FBPhotosKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4169210419DF972100C75A10 /* FBPhotosKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4169210219DF972100C75A10 /* FBPhotosKit.h */; };
+		4169210519DF972100C75A10 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4169210319DF972100C75A10 /* Info.plist */; };
+		4169210719DF974A00C75A10 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4169210619DF974A00C75A10 /* Info.plist */; };
+		4169210919DF975400C75A10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4169210819DF975400C75A10 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +28,59 @@
 			remoteGlobalIDString = 416920AC19DF91FF00C75A10;
 			remoteInfo = FBPhotos;
 		};
+		416920EA19DF96A600C75A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 416920A519DF91FF00C75A10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 416920AC19DF91FF00C75A10;
+			remoteInfo = FBPhotos;
+		};
+		416920F119DF96A600C75A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 416920A519DF91FF00C75A10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 416920DE19DF96A500C75A10;
+			remoteInfo = FBPhotosKit;
+		};
+		416920F519DF96A600C75A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 416920A519DF91FF00C75A10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 416920DE19DF96A500C75A10;
+			remoteInfo = FBPhotosKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		416920FA19DF96A600C75A10 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				416920F419DF96A600C75A10 /* FBPhotosKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		416920AD19DF91FF00C75A10 /* FBPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		416920B119DF91FF00C75A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		416920B219DF91FF00C75A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		416920B419DF91FF00C75A10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		416920B719DF91FF00C75A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		416920B919DF91FF00C75A10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		416920BC19DF91FF00C75A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		416920C219DF91FF00C75A10 /* FBPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		416920C719DF91FF00C75A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		416920C819DF91FF00C75A10 /* FBPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBPhotosTests.swift; sourceTree = "<group>"; };
+		416920D519DF953A00C75A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = SupportingFiles/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		416920D719DF953A00C75A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SupportingFiles/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		416920DF19DF96A500C75A10 /* FBPhotosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBPhotosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		416920E919DF96A600C75A10 /* FBPhotosKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBPhotosKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		416920EE19DF96A600C75A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416920EF19DF96A600C75A10 /* FBPhotosKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBPhotosKitTests.swift; sourceTree = "<group>"; };
+		4169210219DF972100C75A10 /* FBPhotosKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPhotosKit.h; sourceTree = "<group>"; };
+		4169210319DF972100C75A10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4169210619DF974A00C75A10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4169210819DF975400C75A10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +88,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416920F319DF96A600C75A10 /* FBPhotosKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		416920BF19DF91FF00C75A10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416920DB19DF96A500C75A10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416920E619DF96A600C75A10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				416920AF19DF91FF00C75A10 /* FBPhotos */,
+				416920E019DF96A500C75A10 /* FBPhotosKit */,
 				416920C519DF91FF00C75A10 /* FBPhotosTests */,
+				416920EC19DF96A600C75A10 /* FBPhotosKitTests */,
+				4169210C19DF9B9A00C75A10 /* Imported Frameworks */,
 				416920AE19DF91FF00C75A10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +133,8 @@
 			children = (
 				416920AD19DF91FF00C75A10 /* FBPhotos.app */,
 				416920C219DF91FF00C75A10 /* FBPhotosTests.xctest */,
+				416920DF19DF96A500C75A10 /* FBPhotosKit.framework */,
+				416920E919DF96A600C75A10 /* FBPhotosKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,11 +142,10 @@
 		416920AF19DF91FF00C75A10 /* FBPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				416920D419DF953A00C75A10 /* LaunchScreen.xib */,
+				416920D619DF953A00C75A10 /* Main.storyboard */,
 				416920B219DF91FF00C75A10 /* AppDelegate.swift */,
-				416920B419DF91FF00C75A10 /* ViewController.swift */,
-				416920B619DF91FF00C75A10 /* Main.storyboard */,
-				416920B919DF91FF00C75A10 /* Images.xcassets */,
-				416920BB19DF91FF00C75A10 /* LaunchScreen.xib */,
+				4169210A19DF9B0700C75A10 /* View Controllers */,
 				416920B019DF91FF00C75A10 /* Supporting Files */,
 			);
 			path = FBPhotos;
@@ -90,9 +154,11 @@
 		416920B019DF91FF00C75A10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				416920B119DF91FF00C75A10 /* Info.plist */,
+				4169210819DF975400C75A10 /* Images.xcassets */,
+				4169210619DF974A00C75A10 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		416920C519DF91FF00C75A10 /* FBPhotosTests */ = {
@@ -112,7 +178,75 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		416920E019DF96A500C75A10 /* FBPhotosKit */ = {
+			isa = PBXGroup;
+			children = (
+				4169210B19DF9B5D00C75A10 /* Manager */,
+				416920E119DF96A600C75A10 /* Supporting Files */,
+			);
+			path = FBPhotosKit;
+			sourceTree = "<group>";
+		};
+		416920E119DF96A600C75A10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4169210219DF972100C75A10 /* FBPhotosKit.h */,
+				4169210319DF972100C75A10 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		416920EC19DF96A600C75A10 /* FBPhotosKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				416920EF19DF96A600C75A10 /* FBPhotosKitTests.swift */,
+				416920ED19DF96A600C75A10 /* Supporting Files */,
+			);
+			path = FBPhotosKitTests;
+			sourceTree = "<group>";
+		};
+		416920ED19DF96A600C75A10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				416920EE19DF96A600C75A10 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4169210A19DF9B0700C75A10 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4169210B19DF9B5D00C75A10 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		4169210C19DF9B9A00C75A10 /* Imported Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Imported Frameworks";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		416920DC19DF96A500C75A10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4169210419DF972100C75A10 /* FBPhotosKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		416920AC19DF91FF00C75A10 /* FBPhotos */ = {
@@ -122,10 +256,13 @@
 				416920A919DF91FF00C75A10 /* Sources */,
 				416920AA19DF91FF00C75A10 /* Frameworks */,
 				416920AB19DF91FF00C75A10 /* Resources */,
+				416920FA19DF96A600C75A10 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				416920F219DF96A600C75A10 /* PBXTargetDependency */,
+				416920F619DF96A600C75A10 /* PBXTargetDependency */,
 			);
 			name = FBPhotos;
 			productName = FBPhotos;
@@ -150,6 +287,42 @@
 			productReference = 416920C219DF91FF00C75A10 /* FBPhotosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		416920DE19DF96A500C75A10 /* FBPhotosKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416920F719DF96A600C75A10 /* Build configuration list for PBXNativeTarget "FBPhotosKit" */;
+			buildPhases = (
+				416920DA19DF96A500C75A10 /* Sources */,
+				416920DB19DF96A500C75A10 /* Frameworks */,
+				416920DC19DF96A500C75A10 /* Headers */,
+				416920DD19DF96A500C75A10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBPhotosKit;
+			productName = FBPhotosKit;
+			productReference = 416920DF19DF96A500C75A10 /* FBPhotosKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		416920E819DF96A600C75A10 /* FBPhotosKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416920FB19DF96A600C75A10 /* Build configuration list for PBXNativeTarget "FBPhotosKitTests" */;
+			buildPhases = (
+				416920E519DF96A600C75A10 /* Sources */,
+				416920E619DF96A600C75A10 /* Frameworks */,
+				416920E719DF96A600C75A10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				416920EB19DF96A600C75A10 /* PBXTargetDependency */,
+			);
+			name = FBPhotosKitTests;
+			productName = FBPhotosKitTests;
+			productReference = 416920E919DF96A600C75A10 /* FBPhotosKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,8 +334,17 @@
 				TargetAttributes = {
 					416920AC19DF91FF00C75A10 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 6EC83W22VX;
 					};
 					416920C119DF91FF00C75A10 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 416920AC19DF91FF00C75A10;
+					};
+					416920DE19DF96A500C75A10 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 6EC83W22VX;
+					};
+					416920E819DF96A600C75A10 = {
 						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = 416920AC19DF91FF00C75A10;
 					};
@@ -182,6 +364,8 @@
 			projectRoot = "";
 			targets = (
 				416920AC19DF91FF00C75A10 /* FBPhotos */,
+				416920DE19DF96A500C75A10 /* FBPhotosKit */,
+				416920E819DF96A600C75A10 /* FBPhotosKitTests */,
 				416920C119DF91FF00C75A10 /* FBPhotosTests */,
 			);
 		};
@@ -192,13 +376,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				416920B819DF91FF00C75A10 /* Main.storyboard in Resources */,
-				416920BD19DF91FF00C75A10 /* LaunchScreen.xib in Resources */,
-				416920BA19DF91FF00C75A10 /* Images.xcassets in Resources */,
+				416920D919DF953A00C75A10 /* Main.storyboard in Resources */,
+				4169210919DF975400C75A10 /* Images.xcassets in Resources */,
+				416920D819DF953A00C75A10 /* LaunchScreen.xib in Resources */,
+				4169210719DF974A00C75A10 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		416920C019DF91FF00C75A10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416920DD19DF96A500C75A10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4169210519DF972100C75A10 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416920E719DF96A600C75A10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,7 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				416920B519DF91FF00C75A10 /* ViewController.swift in Sources */,
 				416920B319DF91FF00C75A10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +424,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		416920DA19DF96A500C75A10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416920E519DF96A600C75A10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416920F019DF96A600C75A10 /* FBPhotosKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -233,23 +447,38 @@
 			target = 416920AC19DF91FF00C75A10 /* FBPhotos */;
 			targetProxy = 416920C319DF91FF00C75A10 /* PBXContainerItemProxy */;
 		};
+		416920EB19DF96A600C75A10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 416920AC19DF91FF00C75A10 /* FBPhotos */;
+			targetProxy = 416920EA19DF96A600C75A10 /* PBXContainerItemProxy */;
+		};
+		416920F219DF96A600C75A10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 416920DE19DF96A500C75A10 /* FBPhotosKit */;
+			targetProxy = 416920F119DF96A600C75A10 /* PBXContainerItemProxy */;
+		};
+		416920F619DF96A600C75A10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 416920DE19DF96A500C75A10 /* FBPhotosKit */;
+			targetProxy = 416920F519DF96A600C75A10 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		416920B619DF91FF00C75A10 /* Main.storyboard */ = {
+		416920D419DF953A00C75A10 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				416920B719DF91FF00C75A10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		416920BB19DF91FF00C75A10 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				416920BC19DF91FF00C75A10 /* Base */,
+				416920D519DF953A00C75A10 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		416920D619DF953A00C75A10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				416920D719DF953A00C75A10 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,7 +567,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FBPhotos/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/FBPhotos/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,7 +578,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FBPhotos/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/FBPhotos/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -388,6 +619,80 @@
 			};
 			name = Release;
 		};
+		416920F819DF96A600C75A10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FBPhotosKit/SupportingFiles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		416920F919DF96A600C75A10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/FBPhotosKit/SupportingFiles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		416920FC19DF96A600C75A10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FBPhotosKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBPhotos.app/FBPhotos";
+			};
+			name = Debug;
+		};
+		416920FD19DF96A600C75A10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FBPhotosKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBPhotos.app/FBPhotos";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,6 +718,22 @@
 			buildConfigurations = (
 				416920D019DF91FF00C75A10 /* Debug */,
 				416920D119DF91FF00C75A10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		416920F719DF96A600C75A10 /* Build configuration list for PBXNativeTarget "FBPhotosKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416920F819DF96A600C75A10 /* Debug */,
+				416920F919DF96A600C75A10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		416920FB19DF96A600C75A10 /* Build configuration list for PBXNativeTarget "FBPhotosKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416920FC19DF96A600C75A10 /* Debug */,
+				416920FD19DF96A600C75A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
